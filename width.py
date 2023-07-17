@@ -424,7 +424,7 @@ class Interpreter:
 
     def visit_do(self, node):
         while counter:
-            self.visit(node)
+            self.visit(node.node)
 
     def visit_if(self, node):
         if stack[-1]:
